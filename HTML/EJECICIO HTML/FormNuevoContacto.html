@@ -1,0 +1,83 @@
+
+<!--
+    Ejercicio 1. Introduccion al HTML.
+    Author. Jorge Carreras Martin.
+    Date. 17/11/2020.
+    Version. 1.0
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!--Permite caracteres UTF8-->
+    <title>Nuevo Contacto</title> <!--Titulo que aparece en la pestaña del navegador-->
+</head>
+<body>
+    <header>
+        <h2>Aquí añadiremos un carrusel más adelante</h2>
+    </header>   
+    <section>
+        <form>
+            <div>
+                <div>
+                    <label for="validarNombre">Nombre:*</label>
+                    <input type="text"  id="validarNombre" name="validarNombre" required>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <label for="validarApellidos">Apellidos:*</label>
+                    <input type="text" id="validarApellidos" name="validarApellidos" required>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <label for="validarEmail">Email:*</label>
+                    <input type="email" id="validarEmail" name="validarEmail" required>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <label for="validarTelefono">Teléfono:</label>
+                    <input type="number" id="validarTelefono" name="validarTelefono" max="999999999">
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <label for="validarTema">Tipo:*</label>
+                    <select id="validarTema" name="validarTema" required>
+                        <option selected disabled value="">Selecciona...</option>
+                        <option value="Amigo">Amigo</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Familia">Familia</option>
+                        <option value="Pesado">Pesado</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <label for="validarAsunto">Foto:</label>
+                    <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+                </div>
+            </div>
+        
+            <div>
+                <button  type="submit" name="submit">Enviar</button>
+                <button  type="reset"  name="reset">Limpiar</button>
+            </div>        
+        </form>
+    </section> 
+    <footer>
+        <div>
+            <ul>
+                <li><a href="./Main.html">Main</a></li>
+                <li><a href="./FormNuevoContacto.html">Nuevo Contacto</a></li>  
+            </ul>
+        </div>
+    </footer>   
+</body>
+</html>
