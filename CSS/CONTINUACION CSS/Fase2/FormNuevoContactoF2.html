@@ -10,74 +10,23 @@
 <head>
     <meta charset="utf-8"> <!--Permite caracteres UTF8-->
     <title>Nuevo Contacto</title> <!--Titulo que aparece en la pestaña del navegador-->
+    <link rel="stylesheet" type="text/css" href="EstilosEditadosF2.css">
 </head>
 <body>
-    <header>
-        <h2>Aquí añadiremos un carrusel más adelante</h2>
-    </header>   
-    <section>
-        <form>
-            <div>
-                <div>
-                    <label for="validarNombre">Nombre:*</label>
-                    <input type="text"  id="validarNombre" name="validarNombre" required>
-                </div>
-            </div>
-        
-            <div>
-                <div>
-                    <label for="validarApellidos">Apellidos:*</label>
-                    <input type="text" id="validarApellidos" name="validarApellidos" required>
-                </div>
-            </div>
-        
-            <div>
-                <div>
-                    <label for="validarEmail">Email:*</label>
-                    <input type="email" id="validarEmail" name="validarEmail" required>
-                </div>
-            </div>
-        
-            <div>
-                <div>
-                    <label for="validarTelefono">Teléfono:</label>
-                    <input type="number" id="validarTelefono" name="validarTelefono" max="999999999">
-                </div>
-            </div>
-        
-            <div>
-                <div>
-                    <label for="validarTema">Tipo:*</label>
-                    <select id="validarTema" name="validarTema" required>
-                        <option selected disabled value="">Selecciona...</option>
-                        <option value="Amigo">Amigo</option>
-                        <option value="Trabajo">Trabajo</option>
-                        <option value="Familia">Familia</option>
-                        <option value="Pesado">Pesado</option>
-                    </select>
-                </div>
-            </div>
-        
-            <div>
-                <div>
-                    <label for="validarAsunto">Foto:</label>
-                    <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
-                </div>
-            </div>
-        
-            <div>
-                <button  type="submit" name="submit">Enviar</button>
-                <button  type="reset"  name="reset">Limpiar</button>
-            </div>        
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Formulario de contacto</h3>
+          <h4>Agenda de contactos</h4>
+          <fieldset>
+            <input placeholder="Nombre y apellidos" type="text" tabindex="1" required autofocus>             
+            <input placeholder="Correo electronico" type="email" tabindex="2" required>
+            <input placeholder="Localidad" type="text" tabindex="3" required>
+            <input placeholder="Telefono (opcional)" type="tel" tabindex="3" required>
+            <input placeholder="Codigo postal (opcional)" type="text" tabindex="4" required>
+         </fieldset> 
+          <button name="Guardar" type="submit" id="contact-submit" data-submit="...Sending">Guardar contacto</button>
+ 
         </form>
-    </section> 
-    <footer>
-        <div>
-            <ul>
-                <li><a href="./MainF2.html">Main</a></li>
-                <li><a href="./FormNuevoContactoF2.html">Nuevo Contacto</a></li>  
-            </ul>
-        </div>
-    </footer>   
+    </div> 
 </body>
 </html>
