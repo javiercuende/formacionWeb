@@ -30,3 +30,18 @@
 .box{
     margin-left: 10px;
 }
+
+.card{
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+.cardItem{
+
+    background-color: aliceblue;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
